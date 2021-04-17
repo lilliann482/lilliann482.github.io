@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+
 :root {
-  --bgColor: lightcoral;
+    --bgColor: lightcoral;
 }
 
-html {
-  font-size: 100%;
-}
+html {font-size: 100%;} /*16px*/
 
-/*16px*/
 body {
   background: white;
   font-family: 'Poppins', sans-serif;
@@ -18,9 +16,7 @@ body {
   margin: 0;
 }
 
-p {
-  margin-bottom: 1rem;
-}
+p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
@@ -34,70 +30,90 @@ h1 {
 }
 
 h2 {
-  font-size: 2.441rem;
-  background-color: var(--bgColor);
-  padding: 5px;
+    font-size: 2.441rem;
+    background-color: var(--bgColor);
+    padding: 5px;
 }
 
 h3 {
-  margin: 0;
-  font-size: 1.953rem;
+    margin: 0;
+    font-size: 1.953rem;
 }
 
 h4 {
-  margin: 0;
-  font-size: 1.563rem;
+    margin: 0;
+    font-size: 1.563rem;
 }
 
-h5 {
-  font-size: 1.25rem;
+h5 {font-size: 1.25rem;}
+
+a {
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 3px black;
+
+    &:hover {
+        color: white;
+        border-color: white;
+    }
+
+    &:visited {
+        color: #333;
+        border-color: #333;
+    }
 }
+
 
 header {
-  background-color: var(--bgColor);
-  padding: 10px;
-  text-align: center;
+    background-color: var(--bgColor);
+    padding: 10px;
+    text-align: center;
+    p {
+        margin: 0;
+    }
 }
 
-header p {
-  margin: 0;
+article {
+    h4 {
+        font-style: italic;
+        font-size: 1.25rem;
+    }
+    h5 {
+        font-style: italic;
+        font-size: .8rem;
+        margin: 0;
+    }
 }
 
-article h4 {
-  font-style: italic;
-  font-size: 1.25rem;
-}
-
-article h5 {
-  font-style: italic;
-  font-size: .8rem;
-  margin: 0;
+.contact {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    li {
+        display: inline;
+        margin: 0;
+        padding: 10px;
+    }
 }
 
 .overview {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .education p {
-  line-height: 1;
+    line-height: 1;
 }
 
 footer {
-  background-color: var(--bgColor);
-  padding: 10px;
-  text-align: center;
-  margin-top: 50px;
+    background-color: var(--bgColor);
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+    h6 {
+        margin: 0;
+        padding: 0;
+    }
 }
 
-footer h6 {
-  margin: 0;
-  padding: 0;
-}
-/*# sourceMappingURL=style.css.map */
