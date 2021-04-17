@@ -97,7 +97,7 @@ article h5 {
 }
 
 .contact li {
-  display: inline;
+  display: inline-block;
   margin: 0;
   padding: 10px;
 }
