@@ -90,7 +90,7 @@ article {
         padding: 0;
         list-style-type: none;
     li {
-        display: inline;
+        display: inline-flex;
         margin: 0;
         padding: 10px;
     }
