@@ -85,7 +85,7 @@ a {
 
 a:hover {
   color: var(--linkHover);
-  border-color: white;
+  border-color: var(--linkHover);
 }
 
 a:visited {
@@ -118,16 +118,43 @@ article h5 {
   margin: 0;
 }
 
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+}
+
 .contact {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-align: center;
 }
 
 .contact li {
   display: inline-block;
   margin: 0;
   padding: 10px;
+}
+
+.contact a {
+  color: var(--textColorMain);
+}
+
+.contact a:hover {
+  color: var(--textColorMain);
+  border-color: var(--textColorMain);
+}
+
+.contact a:visited {
+  color: var(--textColorMain);
+  border-color: var(--textColorMain);
 }
 
 .two-column {
@@ -143,20 +170,6 @@ article h5 {
 
 .education p {
   line-height: 1;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  background-color: var(--bgColorHighlight);
-  padding: 10px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-footer h6 {
-  margin: 0;
-  padding: 0;
 }
 
 /* UTILITIES */

@@ -78,7 +78,7 @@ a {
 
     &:hover {
         color: var(--linkHover);
-        border-color: white;
+        border-color: var(--linkHover);
     }
 
     &:visited {
@@ -113,7 +113,7 @@ article {
     }
 }
 
-.contact {
+.nav {
         margin: 0;
         padding: 0;
         list-style-type: none;
@@ -122,6 +122,31 @@ article {
         margin: 0;
         padding: 10px;
     }
+}
+
+.contact {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 10px;
+    }
+    a {
+        color: var(--textColorMain);
+        &:hover {
+            color: var(--textColorMain);
+            border-color: var(--textColorMain);
+        }
+    
+        &:visited {
+            color: var(--textColorMain);
+            border-color: var(--textColorMain);
+        }
+    }
+    
 }
 
 .two-column {
@@ -134,18 +159,18 @@ article {
     line-height: 1;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    background-color: var(--bgColorHighlight);
-    padding: 10px;
-    text-align: center;
-    margin-top: 50px;
-    h6 {
-        margin: 0;
-        padding: 0;
-    }
-}
+// footer {
+//     position: fixed;
+//     bottom: 0;
+//     background-color: var(--bgColorHighlight);
+//     padding: 10px;
+//     text-align: center;
+//     margin-top: 50px;
+//     h6 {
+//         margin: 0;
+//         padding: 0;
+//     }
+// }
 
 /* UTILITIES */
 
