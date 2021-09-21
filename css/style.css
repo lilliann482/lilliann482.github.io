@@ -5,8 +5,11 @@
   --bgColorHighlight: lightcoral;
   --textColorHighlight: black;
   --link: black;
+  --linkBody: black;
   --linkHover: white;
+  --linkHoverBody: black;
   --linkVisited: white;
+  --linkVisitedBody: black;
 }
 
 html[data-theme='dark'] {
@@ -15,8 +18,11 @@ html[data-theme='dark'] {
   --bgColorHighlight: lightcoral;
   --textColorHighlight: black;
   --link: black;
+  --linkBody: white;
   --linkHover: white;
+  --linkHoverBody: white;
   --linkVisited: white;
+  --linkVisitedBody: white;
 }
 
 #theme-toggle {
@@ -40,6 +46,19 @@ body {
   color: var(--textColorMain);
   padding: 30px 30px 0px 30px;
   margin: 0;
+}
+
+body a {
+  color: var(--linkBody);
+  border-color: var(--linkBody);
+}
+
+body a:hover {
+  color: var(--linkHoverBody);
+}
+
+body a:visited {
+  color: var(--linkVisitedBody);
 }
 
 p {

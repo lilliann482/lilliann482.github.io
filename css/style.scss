@@ -6,8 +6,11 @@
     --bgColorHighlight: lightcoral;
     --textColorHighlight: black;
     --link: black;
+    --linkBody: black;
     --linkHover: white;
+    --linkHoverBody: black;
     --linkVisited: white;
+    --linkVisitedBody: black;
 } 
 
 
@@ -17,8 +20,11 @@ html[data-theme='dark'] {
     --bgColorHighlight: lightcoral;
     --textColorHighlight: black;
     --link: black;
+    --linkBody: white;
     --linkHover: white;
+    --linkHoverBody: white;
     --linkVisited: white;
+    --linkVisitedBody: white;
 }
 
 #theme-toggle {
@@ -38,6 +44,16 @@ body {
   color: var(--textColorMain);
   padding: 30px 30px 0px 30px;
   margin: 0;
+  a {
+      color: var(--linkBody);
+      border-color: var(--linkBody);
+  }
+  a:hover {
+      color: var(--linkHoverBody);
+  }
+  a:visited {
+      color: var(--linkVisitedBody);
+  }
 }
 
 p {margin-bottom: 1rem;}
@@ -200,4 +216,6 @@ article {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+
 
