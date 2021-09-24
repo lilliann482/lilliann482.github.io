@@ -1,14 +1,10 @@
 :root {
   --modViolet: hsl(263, 55%, 52%);
-  --modVioletLight: hsl(263, 55%, 70%);
   --darkGray: hsl(217, 19%, 35%);
   --darkBlue: hsl(219, 29%, 14%);
-  --darkBlueLight: hsl(219, 29%, 14%, 70%);
   --white: hsl(0, 0%, 100%);
-  --whiteLight: hsla(0, 0%, 100%, 70%);
   --lightGray: hsl(0, 0%, 81%);
   --lightBlue: hsl(210, 46%, 95%);
-  --lightBlueLight: hsla(210, 46%, 95%, 70%);
   --boxShadow: hsla(217, 19%, 35%, 25%);
   --lightWeight: 500;
   --heavyWeight: 600;
@@ -53,8 +49,8 @@ p {
           box-shadow: 40px 60px 50px var(--boxShadow);
 }
 
-.card p {
-  color: var(--darkBlueLight);
+.card h2 {
+  font-size: 1.538rem;
 }
 
 .highlight {
@@ -62,12 +58,30 @@ p {
   color: var(--white);
 }
 
+.highlight h2 {
+  position: relative;
+  z-index: 1;
+}
+
 .highlight p {
-  color: var(--modVioletLight);
+  color: var(--lightGray);
 }
 
 .highlight .testimonial-img {
   border: 2px solid var(--modVioletLight);
+}
+
+.highlight .testimonial-info {
+  position: relative;
+}
+
+.highlight .testimonial-info:after {
+  content: url("images/bg-pattern-quotation.svg");
+  position: absolute;
+  left: 65%;
+  top: -1.8rem;
+  z-index: 0;
+  opacity: .7;
 }
 
 .lightGray {
@@ -75,31 +89,27 @@ p {
   color: var(--white);
 }
 
-.lightGray p {
-  color: var(--whiteLight);
-}
-
 .darkGray {
   background-color: var(--darkBlue);
-  color: var(--lightBlue);
-}
-
-.darkGray p {
-  color: var(--lightBlueLight);
+  color: var(--white);
 }
 
 .darkGray .testimonial-img {
   border: 2px solid var(--modViolet);
 }
 
+.darkGray .testimonial-content h2 {
+  color: var(--lightBlue);
+}
+
 .grid-wrapper {
-  max-width: 90%;
+  max-width: 85%;
   margin: 0;
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 2;
       grid-template-rows: 2;
 }
@@ -132,6 +142,7 @@ p {
 
 .testimonial-name {
   padding-left: 15px;
+  line-height: 1rem;
 }
 
 .testimonial-name h3 {
@@ -140,9 +151,14 @@ p {
 
 .testimonial-name p {
   margin: 0;
+  opacity: .5;
 }
 
-@media screen and (max-width: 375px) {
+.testimonial-content p {
+  opacity: .7;
+}
+
+@media screen and (max-width: 800px) {
   .grid-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
