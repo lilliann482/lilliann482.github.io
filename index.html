@@ -1,53 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/dd58e29640.js" crossorigin="anonymous"></script>
-    <title>Alicia Eckert's Resume</title>
+    <link rel="stylesheet" href="/main-css/style.css">
+    <title>Alicia Eckert's Portfolio</title>
 </head>
+
 <body>
-   
-    <div class="tooltip" id="theme-toggle">
-        <i class="fas fa-adjust"></i>        
-        <span class="tooltiptext">Toggle Light/Dark Mode</span>
-    </div>
-
-    
-
     <header>
-        <h1 class="text-color-highlight">Alicia Eckert</h1>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-        </ul>
+        <h1>
+            Alicia Eckert's Portfolio
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="resume.html">
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2 class=text-color-highlight>Projects</h2>
-            <div class="two-column">
-                <div>
-                    <h3>UI Components</h3>
-                    <ul>
-                        <li><a href="/testimonial-cards/testimonials.html">Testimonial Cards</a></li>
-                        <li><a href="/layout-challenge/four-card.html">Four Card Layout</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Static Sites</h3>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-    </main>
-    <script src="/js/main.js"></script>
 
-    
+    <main>
+        <section class="projects">
+            <h2>
+                Projects
+            </h2>
+
+            <div class="grid-wrapper">
+                <article>
+
+                    <div>
+                        <a href="/layout-challenge/four-card.html">
+                            <img class="project-img" src="/images/four-card-layout.png"
+                                alt="Screen capture of four card layout challenge project">
+                        </a>
+                    </div>
+                    <div class="project-article-content">
+                        <h3>
+                            <a href="/layout-challenge/four-card.html">Four Card Layout Challenge</a>
+                        </h3>
+                        <p class="project-article-date">
+                            October 2, 2021
+                        </p>
+                        <p class="article-description">
+                            <a href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK" target="_blank">Frontend Mentor challenge</a> completed with flexbox and grid.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article>
+
+                    <div>
+                        <a href="/testimonial-cards/testimonials.html">
+                            <img class="project-img" src="/images/testimonial-cards.png"
+                                alt="Screen capture of testimonial cards layout challenge">
+                        </a>
+                    </div>
+                    <div class="project-article-content">
+                        <h3>
+                            <a href="/testimonial-cards/testimonials.html">Testimonial Card Challenge</a>
+                        </h3>
+                        <p class="project-article-date">
+                            September 23, 2021
+                        </p>
+                        <p class="article-description">
+                            <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" target="_blank">Frontend Mentor challenge</a> completed with flexbox and grid.
+                        </p>
+                    </div>
+
+                </article>
+            </div>
+
+        </section>
+    </main>
+
 </body>
+<script src="/js/main.js"></script>
 
 </html>

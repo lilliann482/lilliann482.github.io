@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --darkAccent: hsl(185, 40%, 15%);
+  --medAccent: hsl(185, 40%, 30%);
+  --lightAccent: hsl(185, 40%, 60%);
+  --veryLightAccent: hsl(185, 40%, 90%);
+  --dark: hsl(0,0%,0%);
+  --light: hsl(0, 0%, 100%);
+  --bodyFont: 'PT Sans', sans-serif;
+  --accentFont: 'Poppins', sans-serif;
+  --lightWeight: 200;
+  --medWeight: 400;
+  --heavyWeight: 600;
+  --lineHeightShort: 1.3rem;
+  --lineHeightTall: 1.75rem;
+  --h1: 3.052rem;
+  --h2: 2.441rem;
+  --h3: 1.953rem;
+  --h4: 1.563rem;
+  --h5: 1.25rem;
+  --p: 1rem;
+  --smallText: 0.8rem;
+  --boxShadowSmall: rgba(0, 0, 0, 0.3) 0 0.063rem 0.188rem;
+  --boxShadowMed: rgba(26, 9, 9, 0.5) 0.063rem 0.125rem 0.625rem;
+  --marginTop: 3rem;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--light);
+  font-family: var(--bodyFont);
+  font-weight: var(--medWeight);
+  line-height: var(--lineHeightTall);
+  color: var(--dark);
+}
+
+p {
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-family: var(--accentFont);
+  font-weight: var(--heavyWeight);
+  line-height: var(--lineHeightShort);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+small, .text_small {
+  font-size: var(--smallText);
+}
+
+a {
+  color: var(--medAccent);
+}
+
+a:hover {
+  color: var(--darkAccent);
+}
+
+a:active {
+  color: var(--darkAccent);
+}
+
+a:visited {
+  color: var(--darkAccent);
+}
+
+section {
+  margin-top: var(--marginTop);
+  padding: 0 3rem 3rem 3rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--lightAccent);
+  color: var(--dark);
+}
+
+header h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 1;
+}
+
+nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.625rem;
+  padding: 0.625rem;
+  font-weight: var(--medWeight);
+  font-size: var(--h5);
+}
+
+nav a {
+  color: var(--light);
+}
+
+nav a:hover {
+  color: var(--darkAccent);
+}
+
+nav a:active {
+  color: var(--darkAccent);
+}
+
+nav a:visited {
+  color: var(--dark);
+}
+
+hr {
+  border-top: 0.125rem solid var(--veryLightAccent);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin: .125rem auto 0 auto;
+  max-width: 30vw;
+}
+
+/* PROJECT DISPLAYS */
+.projects .grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects article {
+  -webkit-box-shadow: var(--boxShadowSmall);
+          box-shadow: var(--boxShadowSmall);
+}
+
+.project-article-content {
+  padding: 1rem;
+}
+
+.project-article-content h3 {
+  font-size: var(--h5);
+}
+
+.project-article-date {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RESUME PAGE */
+.resume h2 {
+  color: var(--darkAccent);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.resume h3 {
+  font-size: var(--h4);
+  margin-bottom: 1rem;
+}
+
+.resume h4 {
+  font-size: var(--p);
+  font-weight: var(--medWeight);
+}
+
+.resume h5 {
+  font-size: var(--smallText);
+  font-weight: var(--lightWeight);
+  font-style: italic;
+}
+
+.resume ul {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-list p {
+  padding: 0 .5rem 0 .5rem;
+}
+
+.resume-overview {
+  padding: 0 0 3rem 0;
+}
+
+.overview-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3rem 1fr 1fr 3rem;
+      grid-template-columns: 3rem 1fr 1fr 3rem;
+  grid-gap: 1rem;
+}
+
+.overview-content h3 {
+  text-align: center;
+}
+
+.tech-skills {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -webkit-box-shadow: var(--boxShadowSmall);
+          box-shadow: var(--boxShadowSmall);
+  padding: 1rem;
+}
+
+.soft-skills {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -webkit-box-shadow: var(--boxShadowSmall);
+          box-shadow: var(--boxShadowSmall);
+  padding: 1rem;
+}
+
+.resume-experience article {
+  margin: 1.25rem auto;
+  padding: 1rem;
+  -webkit-box-shadow: var(--boxShadowSmall);
+          box-shadow: var(--boxShadowSmall);
+}
+
+.education article {
+  -webkit-box-shadow: var(--boxShadowSmall);
+          box-shadow: var(--boxShadowSmall);
+  padding: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .projects .grid-wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+  .projects .grid-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .overview-content {
+    -ms-grid-columns: 3rem 1fr 3rem;
+        grid-template-columns: 3rem 1fr 3rem;
+  }
+  .tech-skills {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+  }
+  .soft-skills {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+  }
+}
+
+/* Styles Added With JS */
+.js-card-hover:hover {
+  -webkit-box-shadow: var(--boxShadowMed);
+          box-shadow: var(--boxShadowMed);
+}
+/*# sourceMappingURL=style.css.map */
