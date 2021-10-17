@@ -1,20 +1,11 @@
-//Simple Dark/Light theme
+let allImages = document.getElementsByTagName('img');
 
-var toggle = document.getElementById("theme-toggle");
+Object.keys(allImages).forEach(key => {
 
-var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-if (storedTheme)
-    document.documentElement.setAttribute('data-theme', storedTheme)
+    if (allImages[key].parentNode.nodeName == 'A') {
 
+        let wrapper = allImages[key].parentNode.parentNode.parentNode;
 
-toggle.onclick = function() {
-    var currentTheme = document.documentElement.getAttribute("data-theme");
-    var targetTheme = "light";
-
-    if (currentTheme === "light") {
-        targetTheme = "dark";
+        wrapper.classList.add('js-card-hover');
     }
-
-    document.documentElement.setAttribute('data-theme', targetTheme)
-    localStorage.setItem('theme', targetTheme);
-};
+})
