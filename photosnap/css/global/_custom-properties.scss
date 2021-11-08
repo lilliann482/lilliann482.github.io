@@ -16,7 +16,10 @@ $desktop: 859px;
     --clr-dark-h: 0;
     --clr-dark-s: 0%;
     --clr-dark-l: 0%;
+    --clr-dark-a: .6;
     --clr-dark: hsl( var(--clr-dark-h), var(--clr-dark-s), var(--clr-dark-l));
+
+    --clr-dark-hsla: hsla( var(--clr-dark-h), var(--clr-dark-s), var(--clr-dark-l), var(--clr-dark-a));
 
     --clr-med-h: 0;
     --clr-med-s: 0%;

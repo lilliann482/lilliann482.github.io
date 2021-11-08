@@ -21,8 +21,7 @@
 
 @media screen and (min-width: $tablet) {
     .accent-border {
-        border-left-style: solid;
-        border-left-width: 6px;
+        border-left: 6px dotted;
         border-image: var(--gradient) 1;
     }
 

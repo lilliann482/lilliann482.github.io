@@ -51,7 +51,9 @@ Table of Contents
   --clr-dark-h: 0;
   --clr-dark-s: 0%;
   --clr-dark-l: 0%;
+  --clr-dark-a: .6;
   --clr-dark: hsl( var(--clr-dark-h), var(--clr-dark-s), var(--clr-dark-l));
+  --clr-dark-hsla: hsla( var(--clr-dark-h), var(--clr-dark-s), var(--clr-dark-l), var(--clr-dark-a));
   --clr-med-h: 0;
   --clr-med-s: 0%;
   --clr-med-l: 87%;
@@ -142,10 +144,6 @@ select {
 /* ----------------------------- */
 /* Utility Classes-------------- */
 /* ----------------------------- */
-html {
-  font-size: 15px;
-}
-
 .body {
   width: 100vw;
   font-family: var(--ff-serif);
@@ -356,8 +354,7 @@ html {
 
 @media screen and (min-width: 376px) {
   .accent-border {
-    border-left-style: solid;
-    border-left-width: 6px;
+    border-left: 6px dotted;
     -o-border-image: var(--gradient) 1;
        border-image: var(--gradient) 1;
   }
