@@ -1,0 +1,161 @@
+/* ----------------------------- */
+/* Small Components------------- */
+/* ----------------------------- */
+
+//Accent Border
+.accent-border {
+    border-style: none;
+    position: relative; 
+}
+
+.accent-border::before {
+    --gradient: linear-gradient(45deg, var(--clr-accent-light) 0%, var(--clr-accent-med) 35%, var(--clr-accent-dark) 100%);
+    position: relative;
+    left: var(--pos-left, 1em);
+    content: "";
+    display: block;
+    height: 6px;
+    width: 128px;
+    background: var(--gradient);
+}
+
+@media screen and (min-width: $tablet) {
+    .accent-border {
+        border-left-style: solid;
+        border-left-width: 6px;
+        border-image: var(--gradient) 1;
+    }
+
+    .accent-border::before {
+        display: none;
+    }
+}
+
+//Accented Title
+
+.accented-title {
+    color: var(--clr-dark);
+}
+
+.accented-title span {
+    color: var(--clr-med);
+}
+
+//Buttons
+
+//Box Buttons
+
+.btn {
+    padding: .5em 2em;
+    font-size: var(--fs-200);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-dark {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background-color: var(--clr-med);
+    color: var(--clr-dark);
+}
+
+.btn-light {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.btn-light:hover,
+.btn-light:hover {
+    background-color: var(--clr-med);
+}
+
+//Arrow Buttons
+
+.btn-arrow {
+    font-size: var(--fs-200);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.btn-arrow:hover,
+.btn-arrow:focus {
+    text-decoration: underline;
+}
+
+.btn-arrow::after {
+    position: relative;
+    top: .2rem;
+    left: .8rem;
+}
+
+.btn-arrow-dark {
+    color: var(--clr-dark);
+}
+
+.btn-arrow-dark:hover,
+.btn-arrow-dark:focus {
+    color: var(--clr-dark);
+}
+
+.btn-arrow-dark::after {
+    content: url('/photosnap/assets/shared/desktop/arrow-dark.svg');
+}
+
+.btn-arrow-light {
+    color: var(--clr-light);
+}
+
+.btn-arrow-light:hover,
+.btn-arrow-light:focus {
+    color: var(--clr-med);
+}
+
+.btn-arrow-light::after {
+    content: url('/photosnap/assets/shared/desktop/arrow-light.svg');
+}
+
+//Cards
+
+.card {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        filter: brightness(75%);
+    }
+
+    .card-content {
+        --padding: 2em;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: var(--clr-light);
+        hr {
+            border: none;
+            width: 100%;
+            border-top: 1px solid var(--clr-light);
+        }
+    }
+
+}
+
+//Responsive Images
+
+.responsive-image {
+    display: block;
+    margin: 0 auto;
+    min-width: 100%;
+    height: auto;
+}
+
+

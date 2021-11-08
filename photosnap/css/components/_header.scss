@@ -1,0 +1,112 @@
+/* ----------------------------- */
+/* Site Header------------------ */
+/* ----------------------------- */
+
+.site-header {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(var(--col-repeat, 2), 1fr);
+    align-items: center;
+    width: 100vw;
+    padding: var(--pd-1, 1em) var(--pd-2, 2em);
+    font-size: var(--fs-200);
+    letter-spacing: var(--ls-2);
+
+    .logo {
+        min-width: 100px;
+        height: auto;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    } 
+}
+
+.main-nav { //When open on mobile
+    display: none;
+    position: absolute;
+    top: 99%;
+    width: 100%;
+    height: min-content;
+    text-align: center;
+    padding: 2em;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    text-transform: uppercase;
+
+    ul {
+        font-size: var(--fs-200);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.mob-nav {
+    justify-self: end;
+}
+
+.mob-hr {
+    border: none;
+    border-top: solid 1px var(--clr-med);
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+@media screen and (min-width: $desktop) {
+    
+    .site-header {
+        --flow-space-hz: 1em;
+        --col-repeat: 3;
+        --pd-1: 1em;
+        --pd-2: 2.5em;
+    }
+
+    .mob-nav {
+        display: none;
+    }
+
+    .main-nav {
+        --flow-space: 0;
+        position: static;
+        display: grid;
+        grid-column: span 2;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: subgrid;
+        align-items: center;
+        padding: 0;
+
+        ul {
+            justify-self: center;
+            display: flex;
+        }
+
+        li {
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+    }
+
+    .btn {
+        width: max-content;
+        justify-self: end;
+    }
+
+    .mob-hr {
+        display: none;
+    }
+}
+
+.main-nav-links,
+.main-nav-links:visited {
+    color: var(--clr-dark);
+}
+
+.main-nav-links:hover,
+.main-nav-links:focus {
+    color: var(--clr-med);
+}

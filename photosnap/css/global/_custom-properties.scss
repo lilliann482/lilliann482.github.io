@@ -1,0 +1,64 @@
+/* ------------------------------- */
+/* Custom Properties and Variables */
+/* ------------------------------- */
+//Sass Variables
+
+//Breakpoints
+$mobile: 20em;
+$tablet: 376px;
+$desktop: 859px;
+
+
+//CSS Custom Properties
+
+:root {
+    //Colors
+    --clr-dark-h: 0;
+    --clr-dark-s: 0%;
+    --clr-dark-l: 0%;
+    --clr-dark: hsl( var(--clr-dark-h), var(--clr-dark-s), var(--clr-dark-l));
+
+    --clr-med-h: 0;
+    --clr-med-s: 0%;
+    --clr-med-l: 87%;
+    --clr-med: hsl( var(--clr-med-h), var(--clr-med-s), var(--clr-med-l));
+
+    --clr-light-h: 0;
+    --clr-light-s: 0%;
+    --clr-light-l: 100%;
+    --clr-light: hsl( var(--clr-light-h), var(--clr-light-s), var(--clr-light-l));
+
+    --clr-accent-light: hsl(28, 100%, 79%);
+    --clr-accent-med: hsl(329, 36%, 59%);
+    --clr-accent-dark: hsl(229, 100%, 67%);
+
+    --gradient: linear-gradient(0deg, var(--clr-accent-light) 0%, var(--clr-accent-med) 35%, var(--clr-accent-dark) 100%);
+
+
+   //Font Families
+   --ff-serif: 'DM Sans', sans-serif;
+
+    //Font Weights
+    --fw-700: 700;
+    --fw-400: 400;
+
+    //Letter Spacing
+    --ls-4: 4.17px;
+    --ls-2: 2px;
+    --ls-0: 0px;
+
+    //Font Sizes
+    --fs-700: 2rem; //32px
+    --fs-600: 1.5rem; //24px
+    --fs-500: 1.125rem; //18px
+    --fs-400: 1rem; //16px
+    --fs-300: .938rem; //15px
+    --fs-200: .75rem; //12px
+
+}
+
+@media screen and (min-width: $tablet) {
+    :root {
+        --fs-700: 2.5rem; //40px
+    }    
+}

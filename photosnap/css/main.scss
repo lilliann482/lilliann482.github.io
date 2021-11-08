@@ -1,0 +1,67 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* 
+Table of Contents
+1. Custom Properties and Variables
+    1.a Sass Variables
+      1.a.1 Breakpoints
+    1.b CSS Custom Properties
+      1.b.1 Colors
+        ~Prefix 'clr'
+      1.b.2 Font Families
+        ~Prefix 'ff'
+      1.b.3 Font Weights
+        ~'Prefix 'fw'
+      1.b.4 Letter Spacing
+        ~Prefix 'ls'
+      1.b.5 Font Sizes
+        ~Prefix 'fs'. Includes media query redefinitions
+2. CSS Reset
+3. Utility Classes
+    3.a Global
+    3.b Helpers
+    3.c Colors
+    3.d Typography
+        3.d.1 Font Sizes
+          ~Prefix 'fs'
+        3.d.2 Line Heights
+          ~Prefix 'lh'
+        3.d.3 Font Weights
+          ~Prefix 'fw'
+4. Small Components
+    4.a Accent Border 
+      ~6px wide gradient border that changes from left:desktop to top:mobile
+    4.b Accent Title
+      ~When a span is included, provides a med accent to spanned element
+    4.c Buttons
+      4.c.1 Box Buttons
+        ~Regular box button: styled a tags, in dark and light variety
+      4.c.2 Arrow Buttons
+        ~Styled a tags, in light and dark varieties. Includes an arrow pseudo element for each variety
+    4.d Cards
+      ~Contains an image with a content container.
+5. Site Header
+6. Site Footer
+7. Alternating Blocks
+8. 3 Column Features
+*/
+
+// Base Styles 
+@import 'global/custom-properties';
+@import 'global/reset';
+@import 'global/utilities';
+
+// Components
+@import 'components/small-components';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/alternating-blocks';
+@import 'components/three-col-features';
+
+// Themes
+@import 'themes/main-theme';
+@import 'themes/dark';
+
+
+

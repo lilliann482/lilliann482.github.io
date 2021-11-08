@@ -1,0 +1,56 @@
+/* ----------------------------- */
+/* 3 Column Features------------ */
+/* ----------------------------- */
+
+.feature-descriptions {
+    --flow-space: .5em;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: var(--gap, 1rem);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .content {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-inline: 2rem;
+    }
+
+    div {
+        display: grid;
+
+        p {
+            color: hsla(var(--clr-dark-h), var(--clr-dark-s), var(--clr-dark-l), .6);
+        }
+    }
+
+    img {
+        place-self: center;
+    }
+
+    
+}
+
+@media screen and (min-width: $desktop) {
+    .feature-descriptions {
+        grid-template-columns: .5fr 2fr 2fr 2fr .5fr;
+
+        .content {
+            padding: 0;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .feat1 {
+            grid-column: 2 / 3;
+        }
+
+        div {
+            display: grid;
+            grid-template-rows: 3fr 1fr 3fr;
+            align-items: center;
+        }
+    }
+}

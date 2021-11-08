@@ -1,0 +1,176 @@
+{
+    "stories": [
+        {
+            "name": "Hazy Full Moon of Appalacia",
+            "images": {
+                "mobile": "./images/mobile/moon-of-appalacia.jpg",
+                "tablet": "./images/tablet/moon-of-appalacia.jpg",
+                "desktop": ".images/desktop/moon-of-appalacia.jpg"
+            },
+            "author": "John Appleseed",
+            "date": "March 2nd, 2020",
+            "description": "The dissected plateau area, while not actually made up of geological mountains, is popularly called 'mountains,' especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged."
+        },
+        {
+            "name": "The Mountains",
+            "images": {
+                "mobile": "./images/mobile/mountains.jpg",
+                "tablet": "./images/tablet/mountains.jpg",
+                "desktop": ".images/desktop/mountains.jpg"
+            },
+            "author": "John Appleseed",
+            "date": "April 16th, 2020"
+        },
+        {
+            "name": "Sunset Cityscapes",
+            "images": {
+                "mobile": "./images/mobile/cityscapes.jpg",
+                "tablet": "./images/tablet/cityscapes.jpg",
+                "desktop": ".images/desktop/cityscapes.jpg"
+            },
+            "author": "Benjamin Cruz",
+            "date": "April 14th, 2020"
+        },
+        {
+            "name": "18 Days Voyage",
+            "images": {
+                "mobile": "./images/mobile/18-days-voyage.jpg",
+                "tablet": "./images/tablet/18-days-voyage.jpg",
+                "desktop": ".images/desktop/18-days-voyage.jpg"
+            },
+            "author": "Alexei Borodin",
+            "date": "April 11th, 2020"
+        },
+        {
+            "name": "Architecturals",
+            "images": {
+                "mobile": "./images/mobile/architecturals.jpg",
+                "tablet": "./images/tablet/architecturals.jpg",
+                "desktop": ".images/desktop/architecturals.jpg"
+            },
+            "author": "Samantha Brooke",
+            "date": "April 9th, 2020"
+        },
+        {
+            "name": "World Tour 2019",
+            "images": {
+                "mobile": "./images/mobile/world-tour.jpg",
+                "tablet": "./images/tablet/world-tour.jpg",
+                "desktop": ".images/desktop/world-tour.jpg"
+            },
+            "author": "Timothy Wagner",
+            "date": "April 7th, 2020"
+        },
+        {
+            "name": "Unforseen Corners",
+            "images": {
+                "mobile": "./images/mobile/unforseen-corners.jpg",
+                "tablet": "./images/tablet/unforseen-corners.jpg",
+                "desktop": ".images/desktop/unforseen-corners.jpg"
+            },
+            "author": "William Malcolm",
+            "date": "April 3rd, 2020"
+        },
+        {
+            "name": "King on Africa: Part II",
+            "images": {
+                "mobile": "./images/mobile/king-on-africa.jpg",
+                "tablet": "./images/tablet/king-on-africa.jpg",
+                "desktop": ".images/desktop/king-on-africa.jpg"
+            },
+            "author": "",
+            "date": ""
+        },
+        {
+            "name": "Trip to Nowhere",
+            "images": {
+                "mobile": "./images/mobile/trip-to-nowhere.jpg",
+                "tablet": "./images/tablet/trip-to-nowhere.jpg",
+                "desktop": ".images/desktop/trip-to-nowhere.jpg"
+            },
+            "author": "Felicia Rourke",
+            "date": "March 21st, 2020"
+        },
+        {
+            "name": "Rage of the Sea",
+            "images": {
+                "mobile": "./images/mobile/rage-of-the-sea.jpg",
+                "tablet": "./images/tablet/rage-of-the-sea.jpg",
+                "desktop": ".images/desktop/rage-of-the-sea.jpg"
+            },
+            "author": "Mohammed Abdul",
+            "date": "March 19th, 2020"
+        },
+        {
+            "name": "Running Free",
+            "images": {
+                "mobile": "./images/mobile/running-free.jpg",
+                "tablet": "./images/tablet/running-free.jpg",
+                "desktop": ".images/desktop/running-free.jpg"
+            },
+            "author": "Michelle Stacia",
+            "date": "March 16th, 2020"
+        },
+        {
+            "name": "Behind the Waves",
+            "images": {
+                "mobile": "./images/mobile/behind-the-waves.jpg",
+                "tablet": "./images/tablet/behind-the-waves.jpg",
+                "desktop": ".images/desktop/behind-the-waves.jpg"
+            },
+            "author": "",
+            "date": ""
+        },
+        {
+            "name": "Calm Waters",
+            "images": {
+                "mobile": "./images/mobile/calm-waters.jpg",
+                "tablet": "./images/tablet/calm-waters.jpg",
+                "desktop": ".images/desktop/calm-waters.jpg"
+            },
+            "author": "Samantha Brooke",
+            "date": "March 9th, 2020"
+        },
+        {
+            "name": "Milky Way",
+            "images": {
+                "mobile": "./images/mobile/milky-way.jpg",
+                "tablet": "./images/tablet/milky-way.jpg",
+                "desktop": ".images/desktop/milky-way.jpg"
+            },
+            "author": "Benjamin Cruz",
+            "date": "March 5th, 2020"
+        },
+        {
+            "name": "Night at the Dark Forest",
+            "images": {
+                "mobile": "./images/mobile/dark-forest.jpg",
+                "tablet": "./images/tablet/dark-forest.jpg",
+                "desktop": ".images/desktop/dark-forest.jpg"
+            },
+            "author": "Mohammed Abdul",
+            "date": "March 4th, 2020"
+        },
+        {
+            "name": "Somwarpet's Beauty",
+            "images": {
+                "mobile": "./images/mobile/somwarpet.jpg",
+                "tablet": "./images/tablet/somwarpet.jpg",
+                "desktop": ".images/desktop/somwarpet.jpg"
+            },
+            "author": "Michelle Stacia",
+            "date": "March 1st, 2020"
+        },
+        {
+            "name": "Land of Dreams",
+            "images": {
+                "mobile": "./images/mobile/land-of-dreams",
+                "tablet": "./images/tablet/land-of-dreams",
+                "desktop": ".images/desktop/land-of-dreams"
+            },
+            "author": "William Malcolm",
+            "date": "February 25th, 2020"
+        }
+        
+    ]
+}

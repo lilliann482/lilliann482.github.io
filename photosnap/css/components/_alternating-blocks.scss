@@ -1,0 +1,68 @@
+/* ----------------------------- */
+/* Alternating Blocks----------- */
+/* ----------------------------- */
+
+.alt-blocks {
+    //Base Component Styles
+
+    --fs: 2.5rem;
+    --lh: 48px;
+    --mg-tb: 3rem;
+    --mg-in: 2rem;
+
+    .content-buffer {
+        padding: var(--mg-tb, 2rem) var(--mg-in, 1rem);
+
+        * {
+            margin-bottom: var(--flow-space, 1rem);
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .alt-blocks {
+        --fs: 1.5rem;
+        --lh: 25px;
+        --mg-tb: 2rem;
+        --mg-in: 1.5rem;
+        --flow-space: .5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        .alt-blocks-img {
+            grid-column: span 1;
+        }
+
+        .alt-blocks-content {
+            display: flex;
+            align-items: center;
+            grid-column: span 2;
+        }
+
+        .alt-blocks-img-right {
+            order: 2;
+        }
+
+        .alt-blocks-content-left {
+            order: 1;
+        }
+
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .alt-blocks {
+        --fs: 3rem;
+        --lh: 48px;
+        grid-template-columns: repeat(5, 1fr);
+
+        .alt-blocks-img {
+            grid-column: span 3;
+        }
+
+        .alt-blocks-content {
+            grid-column: span 2;
+        }
+
+    }
+}
