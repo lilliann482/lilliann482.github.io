@@ -315,15 +315,15 @@ select {
 }
 
 .lh-48 {
-  line-height: 48px;
+  line-height: var(--lh-48, 48px);
 }
 
 .lh-25 {
-  line-height: 25px;
+  line-height: var(--lh-25, 25px);
 }
 
 .lh-16 {
-  line-height: 16px;
+  line-height: var(--lh-16, 16px);
 }
 
 .fw-700 {
@@ -984,18 +984,18 @@ select {
   position: absolute;
   bottom: 0;
   height: 100%;
+  padding-inline: 1rem;
 }
 
 .banner .banner-content h2 {
-  margin-bottom: 2rem;
-}
-
-.banner .content-buffer {
-  padding: 2rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 376px) {
   .banner .banner-content {
+    --fs-700: 1.5rem;
+    --lh-48: 25px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1008,6 +1008,13 @@ select {
             justify-content: space-between;
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 859px) {
+  .banner .banner-content {
+    --fs-700: 2rem;
+    --lh-48: 48px;
   }
 }
 

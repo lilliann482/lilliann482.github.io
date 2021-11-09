@@ -13,16 +13,12 @@
         position: absolute;
         bottom: 0;
         height: 100%;
+        padding-inline: 1rem;
 
         h2 {
-            margin-bottom: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
-    }
-
-    .content-buffer {
-        padding: 2rem 1rem;
-
-        
     }
 }
 
@@ -30,12 +26,24 @@
     .banner {
 
         .banner-content {
+            --fs-700: 1.5rem;
+            --lh-48: 25px;
+
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding-left: 3rem;
             padding-right: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .banner {
+        .banner-content {
+            --fs-700: 2rem;
+            --lh-48: 48px;
         }
     }
 }

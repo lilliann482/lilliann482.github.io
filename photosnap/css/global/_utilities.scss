@@ -128,9 +128,9 @@
 
 .lh {line-height: var(--lh, 1);}
 
-.lh-48 {line-height: 48px;}
-.lh-25 {line-height: 25px;}
-.lh-16 {line-height: 16px;}
+.lh-48 {line-height: var(--lh-48, 48px);}
+.lh-25 {line-height: var(--lh-25, 25px);}
+.lh-16 {line-height: var(--lh-16, 16px);}
 
 //Font Weights
 
