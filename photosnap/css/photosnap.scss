@@ -45,6 +45,7 @@ Table of Contents
 6. Site Footer
 7. Alternating Blocks
 8. 3 Column Features
+9. Banner with image
 */
 
 // Base Styles 
@@ -58,6 +59,7 @@ Table of Contents
 @import 'components/footer';
 @import 'components/alternating-blocks';
 @import 'components/three-col-features';
+@import 'components/banner';
 
 // Themes
 @import 'themes/main-theme';
