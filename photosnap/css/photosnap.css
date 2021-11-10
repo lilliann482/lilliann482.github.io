@@ -519,6 +519,7 @@ select {
 .main-nav {
   display: none;
   position: absolute;
+  z-index: 10;
   top: 99%;
   width: 100%;
   height: -webkit-min-content;
