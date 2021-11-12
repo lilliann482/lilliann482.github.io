@@ -46,6 +46,7 @@ Table of Contents
 7. Alternating Blocks
 8. 3 Column Features
 9. Banner with image
+10. Featured Stories
 */
 
 // Base Styles 
@@ -60,10 +61,8 @@ Table of Contents
 @import 'components/alternating-blocks';
 @import 'components/three-col-features';
 @import 'components/banner';
+@import 'components/featured-stories';
 
-// Themes
-@import 'themes/main-theme';
-@import 'themes/dark';
 
 
 

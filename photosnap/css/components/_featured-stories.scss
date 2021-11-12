@@ -1,0 +1,48 @@
+/* ----------------------------- */
+/* Story Features--------------- */
+/* ----------------------------- */
+
+.featured-story {
+    --flow-space: .5rem;
+    --fs-700: 1.5rem;
+    --lh-48: 25px;
+
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+
+    .featured-story-content {
+        padding: 2em;
+    }
+}
+
+
+@media screen and (min-width: $tablet) {
+    .featured-story {
+        
+        position: relative;
+        background-color: none;
+
+        img {
+            filter: brightness(75%);
+        }
+
+        .featured-story-content {
+            position: absolute;
+            bottom: 20%;
+            z-index: 2;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .featured-story {
+        --fs-700: 2rem;
+        --lh-48: 48px;
+
+        .featured-story-content {
+            bottom: 30%;
+            max-width: 75%;
+        }
+    }
+}

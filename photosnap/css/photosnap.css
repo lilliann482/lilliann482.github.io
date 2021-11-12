@@ -44,6 +44,7 @@ Table of Contents
 7. Alternating Blocks
 8. 3 Column Features
 9. Banner with image
+10. Featured Stories
 */
 /* ------------------------------- */
 /* Custom Properties and Variables */
@@ -1020,6 +1021,45 @@ select {
 }
 
 /* ----------------------------- */
-/* Themes----------------------- */
+/* Story Features--------------- */
 /* ----------------------------- */
+.featured-story {
+  --flow-space: .5rem;
+  --fs-700: 1.5rem;
+  --lh-48: 25px;
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
+}
+
+.featured-story .featured-story-content {
+  padding: 2em;
+}
+
+@media screen and (min-width: 376px) {
+  .featured-story {
+    position: relative;
+    background-color: none;
+  }
+  .featured-story img {
+    -webkit-filter: brightness(75%);
+            filter: brightness(75%);
+  }
+  .featured-story .featured-story-content {
+    position: absolute;
+    bottom: 20%;
+    z-index: 2;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 859px) {
+  .featured-story {
+    --fs-700: 2rem;
+    --lh-48: 48px;
+  }
+  .featured-story .featured-story-content {
+    bottom: 30%;
+    max-width: 75%;
+  }
+}
 /*# sourceMappingURL=photosnap.css.map */
