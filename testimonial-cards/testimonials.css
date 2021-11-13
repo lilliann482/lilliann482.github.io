@@ -14,22 +14,16 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: var(--fontSize);
   font-family: var(--fontFamily);
   background-color: var(--lightBlue);
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 h1, h2, h3 {
@@ -42,7 +36,7 @@ p {
 
 .card {
   border-radius: 8px;
-  padding: 30px;
+  padding: 20px;
   background-color: var(--white);
   color: var(--darkBlue);
   -webkit-box-shadow: 40px 60px 50px var(--boxShadow);
@@ -78,10 +72,16 @@ p {
 .highlight .testimonial-info:after {
   content: url("images/bg-pattern-quotation.svg");
   position: absolute;
-  left: 65%;
-  top: -1.8rem;
+  right: 0;
+  top: -.75rem;
   z-index: 0;
   opacity: .7;
+}
+
+@media screen and (min-width: 30rem) {
+  .testimonial-info:after {
+    left: 65%;
+  }
 }
 
 .lightGray {
@@ -103,11 +103,9 @@ p {
 }
 
 .grid-wrapper {
-  max-width: 85%;
-  margin: 0;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1rem;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 2;

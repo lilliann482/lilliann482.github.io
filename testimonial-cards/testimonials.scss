@@ -16,15 +16,14 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     box-sizing: border-box;
     font-size: var(--fontSize);
     font-family: var(--fontFamily);
     background-color: var(--lightBlue);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 
 }
 
@@ -38,7 +37,7 @@ p {
 
 .card {
     border-radius: 8px;
-    padding: 30px;
+    padding: 20px;
     background-color: var(--white);
     color: var(--darkBlue);
     box-shadow: 40px 60px 50px var(--boxShadow);
@@ -74,10 +73,16 @@ p {
     .testimonial-info:after {
         content: url('images/bg-pattern-quotation.svg');
         position: absolute;
-        left: 65%;
-        top: -1.8rem;
+        right: 0;
+        top: -.75rem;
         z-index: 0;
         opacity: .7;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .testimonial-info:after {
+        left: 65%;
     }
 }
 
@@ -101,10 +106,8 @@ p {
 }
 
 .grid-wrapper {
-    max-width: 85%;
-    margin: 0;
     display: grid;
-    grid-gap: 20px; 
+    grid-gap: 1rem; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2;
     
