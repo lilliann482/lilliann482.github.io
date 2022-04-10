@@ -39,12 +39,15 @@ Table of Contents
         ~Styled a tags, in light and dark varieties. Includes an arrow pseudo element for each variety
     4.d Cards
       ~Contains an image with a content container.
+    4.e Responsive Image
+    4.f Toggle Switch
 5. Site Header
 6. Site Footer
 7. Alternating Blocks
 8. 3 Column Features
 9. Banner with image
 10. Featured Stories
+11. Pricing Cards
 */
 /* ------------------------------- */
 /* Custom Properties and Variables */
@@ -378,6 +381,7 @@ select {
   font-size: var(--fs-200);
   text-transform: uppercase;
   text-decoration: none;
+  border-style: none;
 }
 
 .btn-dark {
@@ -486,6 +490,143 @@ select {
   margin: 0 auto;
   min-width: 100%;
   height: auto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.4rem;
+  height: 1.2rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-med);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 1rem;
+  width: 1rem;
+  left: .1rem;
+  bottom: .1rem;
+  background-color: var(--clr-dark);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--clr-dark);
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.2rem);
+          transform: translateX(1.2rem);
+  background-color: var(--clr-light);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.radio-switch {
+  border: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.radio-switch label {
+  display: inline-block;
+  line-height: 2;
+  position: relative;
+  z-index: 2;
+}
+
+.radio-switch input {
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-switch label:first-of-type {
+  padding-right: 5em;
+}
+
+.radio-switch label:last-child {
+  margin-left: -4.25em;
+  padding-left: 5em;
+}
+
+.radio-switch label:first-of-type:before,
+.radio-switch label:first-of-type:after {
+  content: "";
+  height: 2em;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  vertical-align: middle;
+}
+
+.radio-switch label:first-of-type:before {
+  background: var(--clr-light);
+  border: 2px solid var(--clr-dark);
+  border-radius: 100%;
+  position: absolute;
+  right: -.075em;
+  -webkit-transform: translateX(0em);
+          transform: translateX(0em);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  width: 2em;
+  z-index: 2;
+}
+
+.radio-switch label:first-of-type:after {
+  background: var(--clr-dark);
+  border-radius: 1em;
+  margin: 0 1em;
+  -webkit-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+  width: 4em;
+}
+
+.radio-switch input:first-of-type:checked ~ label:first-of-type:after {
+  background: var(--clr-med);
+}
+
+.radio-switch input:first-of-type:checked ~ label:first-of-type:before {
+  -webkit-transform: translateX(-2em);
+          transform: translateX(-2em);
+  background-color: var(--clr-dark);
+  border: 2px solid var(--clr-med);
+}
+
+.radio-switch input:last-of-type:checked ~ label:last-of-type {
+  z-index: 1;
 }
 
 /* ----------------------------- */
@@ -840,10 +981,10 @@ select {
 /* Alternating Blocks----------- */
 /* ----------------------------- */
 .alt-blocks {
-  --fs: 2.5rem;
-  --lh: 48px;
-  --mg-tb: 3rem;
-  --mg-in: 2rem;
+  --fs: 1.5rem;
+  --lh: 25px;
+  --mg-tb: 2rem;
+  --mg-in: 1.5rem;
 }
 
 .alt-blocks .content-buffer {
@@ -856,10 +997,6 @@ select {
 
 @media screen and (min-width: 376px) {
   .alt-blocks {
-    --fs: 1.5rem;
-    --lh: 25px;
-    --mg-tb: 2rem;
-    --mg-in: 1.5rem;
     --flow-space: .5rem;
     display: -ms-grid;
     display: grid;
@@ -1060,6 +1197,72 @@ select {
   .featured-story .featured-story-content {
     bottom: 30%;
     max-width: 75%;
+  }
+}
+
+/* ----------------------------- */
+/* Pricing Cards---------------- */
+/* ----------------------------- */
+.pricing {
+  padding: 3rem 1rem;
+}
+
+.pricing .switch-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.pricing-card {
+  background-color: #F5F5F5;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card h3 {
+  font-size: var(--fs-600);
+}
+
+.pricing-card .price-text {
+  font-size: var(--fs-700);
+  line-height: 1rem;
+}
+
+.pricing-card .btn {
+  margin-top: 1rem;
+}
+
+.pricing-card-active {
+  --gradient: linear-gradient(45deg, var(--clr-accent-light) 0%, var(--clr-accent-med) 35%, var(--clr-accent-dark) 100%);
+  background-color: var(--clr-dark);
+  padding: 3rem 1rem;
+  border-top: 6px solid;
+  -o-border-image: var(--gradient) 1;
+     border-image: var(--gradient) 1;
+}
+
+.pricing-card-active h3 {
+  color: var(--clr-light);
+}
+
+.pricing-card-active p {
+  color: var(--clr-light);
+}
+
+@media screen and (min-width: 376px) {
+  .pricing-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=photosnap.css.map */

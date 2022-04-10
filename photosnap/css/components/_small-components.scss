@@ -49,6 +49,7 @@
     font-size: var(--fs-200);
     text-transform: uppercase;
     text-decoration: none;
+    border-style: none;
 }
 
 .btn-dark {
@@ -157,4 +158,133 @@
     height: auto;
 }
 
+//Toggle Switch (Checkbox)
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2.4rem;
+    height: 1.2rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-med);
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    left: .1rem;
+    bottom: .1rem;
+    background-color: var(--clr-dark);
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--clr-dark);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(1.2rem);
+    background-color: var(--clr-light);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+//Toggle Switch (radio buttons)
+
+.radio-switch {
+    border: none;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.radio-switch label {
+    display: inline-block;
+    line-height: 2;
+    position: relative;
+    z-index: 2;
+}
+
+.radio-switch input {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio-switch label:first-of-type {
+    padding-right: 5em;
+}
+
+.radio-switch label:last-child {
+    margin-left: -4.25em;
+    padding-left: 5em;
+}
+
+.radio-switch label:first-of-type:before,
+.radio-switch label:first-of-type:after {
+    content: "";
+    height: 2em;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    vertical-align: middle;
+}
+
+.radio-switch label:first-of-type:before {
+    background: var(--clr-light);
+    border: 2px solid var(--clr-dark);
+    border-radius: 100%;
+    position: absolute;
+    right: -.075em;
+    transform: translateX(0em);
+    transition: transform .2s ease-in-out;
+    width: 2em;
+    z-index: 2;
+}
+
+.radio-switch label:first-of-type:after {
+    background: var(--clr-dark);
+    border-radius: 1em;
+    margin: 0 1em;
+    transition: background .2s ease-in-out;
+    width: 4em;
+}
+
+.radio-switch input:first-of-type:checked ~ label:first-of-type:after {
+    background: var(--clr-med);
+}
+
+.radio-switch input:first-of-type:checked ~ label:first-of-type:before {
+    transform: translateX(-2em);
+    background-color: var(--clr-dark);
+    border: 2px solid var(--clr-med);
+}
+
+.radio-switch input:last-of-type:checked ~ label:last-of-type {
+    z-index: 1;
+}

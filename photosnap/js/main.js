@@ -3,7 +3,10 @@
 const mainNav = document.getElementById('main-nav')
 const mobNavToggle = document.getElementById('mob-nav-toggle')
 
-mobNavToggle.addEventListener('click', e => {
+mobNavToggle.onclick = toggleMobileMenu;
+mobNavToggle.onkeydown = toggleMobileMenu;
+
+function toggleMobileMenu(e) {
     if (e.target.matches('img')) {
         const img = e.target
         const status = img.dataset.status
@@ -18,4 +21,4 @@ mobNavToggle.addEventListener('click', e => {
             mainNav.style.display = "none"
         }
     }
-})
+}

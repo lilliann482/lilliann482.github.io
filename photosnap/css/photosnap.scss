@@ -41,12 +41,15 @@ Table of Contents
         ~Styled a tags, in light and dark varieties. Includes an arrow pseudo element for each variety
     4.d Cards
       ~Contains an image with a content container.
+    4.e Responsive Image
+    4.f Toggle Switch
 5. Site Header
 6. Site Footer
 7. Alternating Blocks
 8. 3 Column Features
 9. Banner with image
 10. Featured Stories
+11. Pricing Cards
 */
 
 // Base Styles 
@@ -62,6 +65,7 @@ Table of Contents
 @import 'components/three-col-features';
 @import 'components/banner';
 @import 'components/featured-stories';
+@import 'components/pricing-cards';
 
 
 

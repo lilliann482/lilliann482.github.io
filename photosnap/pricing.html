@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="./css/photosnap.css">
     <title>Pricing</title>
 </head>
+
 <body class="body">
     <!-- Site Header & Navigation -->
     <header class="site-header">
@@ -42,8 +44,127 @@
 
     </header>
     <!-- End Site Header & Navigation -->
+    <main>
+        <!--Hero-->
+        <section class="alt-blocks">
+            <div class="alt-blocks-img alt-blocks-img-right">
+                <picture class="responsive-image">
+                    <source media="(min-width: 859px)" srcset="/photosnap/assets/pricing/desktop/hero.jpg">
+                    <source media="(min-width: 376px)" srcset="/photosnap/assets/pricing/tablet/hero.jpg">
+                    <img media="(min-width: 375px)" srcset="/photosnap/assets/pricing/mobile/hero.jpg"
+                        alt="silhoutte of a person with a camera against a sunset">
+                </picture>
+            </div>
+            <div class="alt-blocks-content alt-blocks-content-left bg-dark text-light">
+                <div class="accent-border">
+                    <div class="content-buffer">
+                        <h1 class="fs lh uppercase">Pricing</h1>
+                        <p>Create your stories. Photosnap is a platform for photographers and visual storytellers. It's
+                            the simple way to create and share your photos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Hero-->
+        <!--Pricing-->
+        <section class="pricing">
+            <div class="switch-container">
+                <fieldset id="pricing-switch" class="radio-switch">
+                    <legend class="sr-only">
+                        Pricing Plan
+                    </legend>
+                    <input type="radio" name="pricing-plan" id="monthly">
+                    <label for="monthly">
+                        Monthly
+                    </label>
+                    <input type="radio" name="pricing-plan" id="yearly">
+                    <label for="yearly">
+                        Yearly
+                    </label>
+                </fieldset>
+            </div>
 
-    <h1 class="fs-700 lh-48 accent-border pd-t pd-b">Content Coming Soon</h1>
+
+            <!-- <div class="switch-container">
+                <label class="switch-label-active" for="pricing-switch">Monthly</label>
+                <label for="pricing-switch" class="switch">
+                    <input id="pricing-switch"  type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch-label-inactive" for="pricing-switch">Yearly</label>
+            </div> -->
+            <div class="pricing-cards">
+                <div class="pricing-card flow">
+                    <h3>
+                        Basic
+                    </h3>
+                    <p>
+                        Includes basic usage of our platform. Recommended for new and aspiring photographers.
+                    </p>
+                    <p class="price-text" data-base-price="19">
+                        $19.00
+                    </p>
+                    <p class="pricing-plan-text">
+                        per month
+                    </p>
+                    <button class="pricing-plan-btn btn btn-dark">
+                        Pick Plan
+                    </button>
+                </div>
+
+                <div class="pricing-card pricing-card-active flow">
+                    <h3>
+                        Pro
+                    </h3>
+                    <p>
+                        More advanced features available. Recommended for photography veterans and professionals
+                    </p>
+                    <p class="price-text" data-base-price="39">
+                        $39.00
+                    </p>
+                    <p class="pricing-plan-text">
+                        per month
+                    </p>
+                    <button class="pricing-plan-btn btn btn-light">
+                        Pick Plan
+                    </button>
+                </div>
+
+                <div class="pricing-card flow">
+                    <h3>
+                        Business
+                    </h3>
+                    <p>
+                        Additional features available such as more detailed metrics. Recommended for business owners.
+                    </p>
+                    <p class="price-text" data-base-price="99">
+                        $99.00
+                    </p>
+                    <p class="pricing-plan-text">
+                        per month
+                    </p>
+                    <button class="pricing-plan-btn btn btn-dark">
+                        Pick Plan
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        <!--End Pricing-->
+        <!--Banner-->
+        <section class="banner">
+            <picture class="responsive-image">
+                <source media="(min-width: 859px)" srcset="/photosnap/assets/shared/desktop/bg-beta.jpg">
+                <source media="(min-width: 376px)" srcset="/photosnap/assets/shared/tablet/bg-beta.jpg">
+                <img media="(min-width: 375px)" srcset="/photosnap/assets/shared/mobile/bg-beta.jpg" alt="canyon walls">
+            </picture>
+            <div class="banner-content accent-border">
+                <h2 class="text-light uppercase fs-700 lh-48 ls-4">We're In Beta. <br> Get Your <br> Invite Today!</h2>
+                <a href="#" class="btn-arrow btn-arrow-light">Get An Invite</a>
+            </div>
+        </section>
+        <!--End Banner-->
+    </main>
 
     <!--Site Footer-->
     <footer class="site-footer">
@@ -115,5 +236,7 @@
     <!--End Site Footer-->
 
     <script src="js/main.js"></script>
+    <script src="js/pricing.js"></script>
 </body>
+
 </html>
